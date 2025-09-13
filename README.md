@@ -26,24 +26,6 @@ The project was developed using:
 - **Radix UI** - Accessible and customizable UI components
 - **Lucide Icons** - Simple and consistent SVG icons
 
-## 🛠️ Installation and Setup
-
-To run the project locally:
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/zerobelow-landing.git
-
-# Navigate to the directory
-cd my-landing
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
-```
-
 ## 📐 Project Structure
 
 The project follows an organized structure:
