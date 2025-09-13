@@ -1,69 +1,74 @@
-# React + TypeScript + Vite
+# ZeroBelow - Drones for Extreme Environments ❄️🚁
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🥶 About the Project
 
-Currently, two official plugins are available:
+ZeroBelow is a landing page for a company specializing in high-technology drones designed to operate in extremely low temperature conditions. These drones are equipped with advanced technology that allows them to function efficiently in arctic and polar environments, capturing high-quality images and data in conditions where other equipment would fail.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Site Features
 
-## Expanding the ESLint configuration
+The landing page includes:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🏔️ **Hero Section** - Dynamic presentation with a slider showcasing the main drone models
+- 🛠️ **Services** - Details about the solutions offered (aerial filming, thermal monitoring, polar mapping, etc.)
+- 💡 **Technology** - Technical specifications and advanced features of the drones
+- 📊 **Use Cases** - Real examples of applications in extreme conditions
+- 📱 **Responsive Design** - Optimized experience for all devices
+- 🌈 **Modern UI** - Elegant interface with fluid animations and glassmorphism effects
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Technologies Used
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+The project was developed using:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **React 18** - Frontend UI library
+- **TypeScript** - Static typing for safer code
+- **Vite** - Build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework
+- **Radix UI** - Accessible and customizable UI components
+- **Lucide Icons** - Simple and consistent SVG icons
+
+## 🛠️ Installation and Setup
+
+To run the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/zerobelow-landing.git
+
+# Navigate to the directory
+cd my-landing
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📐 Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The project follows an organized structure:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- `src/components/` - Page-specific components
+- `src/ui/` - Reusable UI components based on Radix
+- `src/assets/` - Images and other static resources
+- `src/styles/` - Global styles and Tailwind configuration
+
+## 🌡️ ZeroBelow Key Features
+
+- Operation in temperatures down to -40°C
+- Intelligent heating systems for critical components
+- Integrated FLIR thermal cameras
+- Extended flight autonomy (120 minutes)
+- Arctic wind resistance
+- High-precision 3D mapping in polar regions
+
+## 📷 Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
+
+## 👨‍💻 Author
+
+Developed with ❤️ by Erik Flores Reche
