@@ -3,7 +3,8 @@ import { ArrowRight, Thermometer, ChevronLeft, ChevronRight } from "lucide-react
 import { motion, AnimatePresence } from "motion/react";
 
 import { HeroController } from "./Hero.controller";
-import { Button } from "../../widgets/button";
+import { Button } from "@/widgets/button";
+
 
 export function Hero() {
 
@@ -57,10 +58,10 @@ export function Hero() {
           transition={{ duration: 0.8 }}
           className="max-w-5xl mx-auto"
         >
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
+          {/* <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6">
             <Thermometer className="w-4 h-4 text-cyan-400" />
             <span className="text-white/90">Especialistas en temperaturas extremas</span>
-          </div>
+          </div> */}
 
           {/* Dynamic Content based on current slide */}
           <AnimatePresence mode="wait">
@@ -72,7 +73,7 @@ export function Hero() {
               transition={{ duration: 0.6 }}
               className="mb-8"
             >
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white  leading-tight">
                 <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
                   {slides[currentSlide].title}
                 </span>
