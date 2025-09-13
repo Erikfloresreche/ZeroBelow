@@ -1,35 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import Forest from "./assets/images/Forest.jpg"
+import { Hero } from "./components/Hero/Hero";
 
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="min-h-screen relative">
+      {/* Background Forest Image */}
+      <div className="fixed inset-0 z-0">
+        <img
+          src={Forest}
+          alt="Winter forest background"
+          className="w-full h-full object-cover"
+        />
+        {/* Gradient Overlays for elegant modern look */}
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/95 via-slate-800/90 to-slate-900/95"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-transparent to-slate-900/80"></div>
+        <div className="absolute inset-0 backdrop-blur-[1px]"></div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      
+      {/* Content */}
+      <div className="relative z-20">
+        <Hero />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
-
-export default App
