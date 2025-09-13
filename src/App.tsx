@@ -1,6 +1,8 @@
 
 import Forest from "./assets/images/Forest.jpg"
+import { Header } from "./components/Header/Header";
 import { Hero } from "./components/Hero/Hero";
+
 
 export default function App() {
   return (
@@ -20,6 +22,7 @@ export default function App() {
       
       {/* Content */}
       <div className="relative z-20">
+        <Header />
         <Hero />
       </div>
     </div>
