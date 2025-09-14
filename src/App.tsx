@@ -3,6 +3,7 @@ import Forest from "./assets/images/Forest.jpg"
 import { Header } from "./components/Header/Header";
 import { Hero } from "./components/Hero/Hero";
 import { Services } from "./components/Services/Services";
+import { Technology } from "./components/Technology/Technology";
 
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
         <Header />
         <Hero />
         <Services />
+        <Technology />
       </div>
     </div>
   );
