@@ -4,6 +4,7 @@ import { Header } from "./components/Header/Header";
 import { Hero } from "./components/Hero/Hero";
 import { Services } from "./components/Services/Services";
 import { Technology } from "./components/Technology/Technology";
+import { UseCases } from "./components/UseCases/UseCases";
 
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
         <Hero />
         <Services />
         <Technology />
+        <UseCases />
       </div>
     </div>
   );
